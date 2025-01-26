@@ -34,6 +34,8 @@ const audio_tetos_death = new Audio('static/sound/tetos-death.mp3');
 const audio_tetos_maziresu = new Audio('static/sound/tetos-maziresu.mp3');
 const audio_tetos_oisii = new Audio('static/sound/tetos-oisii.mp3');
 const audio_tetos_proposal = new Audio('static/sound/tetos-proposal.mp3');
+const audio_tetos_urami = new Audio('static/sound/tetos-urami.mp3');
+const audio_tetos_evol = new Audio('static/sound/tetos-evol.mp3');
 
 // death
 document.getElementById('tetos_death').addEventListener('click', () => {
@@ -57,4 +59,16 @@ document.getElementById('tetos_oisii').addEventListener('click', () => {
 document.getElementById('tetos_proposal').addEventListener('click', () => {
     audio_tetos_proposal.currentTime = 0;
     audio_tetos_proposal.play();
+});
+
+// urami
+document.getElementById('tetos_urami').addEventListener('click', () => {
+    audio_tetos_urami.currentTime = 0;
+    audio_tetos_urami.play();
+});
+
+// evol
+document.getElementById('tetos_evol').addEventListener('click', () => {
+    audio_tetos_evol.currentTime = 0;
+    audio_tetos_evol.play();
 });
