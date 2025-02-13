@@ -21,19 +21,61 @@
     </nav>
 
     <div class="container">
-        <div class="row">
+        <div class="row mx-3">
             <div class="col-12 mt-5" style="text-align: center; border-bottom: 2px #444 solid">
                 <h1>MIDAIR MEME</h1>
             </div>
 
             <div class="col-12 mt-3"></div>
 
-            <button type="button" id="tetos_death" class="btn btn-outline-primary my-2 py-2 fadein" href="">断末魔</button>
-            <button type="button" id="tetos_maziresu" class="btn btn-outline-primary my-2 py-2 fadein" href="">マジレス</button>
-            <button type="button" id="tetos_oisii" class="btn btn-outline-primary my-2 py-2 fadein" href="">おいし～</button>
-            <button type="button" id="tetos_proposal" class="btn btn-outline-primary my-2 py-2 fadein" href="">プロポーサル</button>
-            <button type="button" id="tetos_evol" class="btn btn-outline-primary my-2 py-2 fadein" href="">テトス最終進化系</button>
-            <button type="button" id="tetos_urami" class="btn btn-outline-primary my-2 py-2 fadein" href="">この恨み、覚えておくｩｱﾊ↑</button>
+            <button type="button" class="btn btn-outline-secondary my-2 py-2 fadein" data-bs-toggle="collapse" data-bs-target="#settings">
+                設定を開く
+            </button>
+
+            <div class="collapse my-3" id="settings">
+                <div class="card card-body p-4">
+                    <h5 class="card-title mb-3">音量設定</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-volume-mute me-3" style="font-size: 28px; color: #999;"></i>
+                        <input type="range" id="volume_control" class="form-range flex-grow-1" min="0" max="1" step="0.1" value="1">
+                        <i class="bi bi-volume-up ms-3" style="font-size: 28px; color: #999;"></i>
+                    </div>
+            
+                    <h5 class="card-title mb-3">再生速度設定</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-chevron-double-down me-3" style="font-size: 28px; color: #999;"></i>
+                        <input type="range" id="pitch_control" class="form-range flex-grow-1" min="0.2" max="4" step="0.1" value="1">
+                        <i class="bi bi-chevron-double-up ms-3" style="font-size: 28px; color: #999;"></i>
+                    </div>
+            
+                    <h5 class="card-title mb-3">音の重複の設定</h5>
+                    <div class="form-check form-switch mb-3">
+                        <input type="checkbox" id="overlap_control" class="form-check-input" role="switch" checked>
+                        <label class="form-check-label" for="overlap_control">音の重複を許可</label>
+                    </div>
+
+                    <h5 class="card-title mb-3">設定の初期化</h5>
+                    <button id="reset_settings" class="btn btn-outline-danger fadein">設定をリセット</button>
+                </div>
+            </div>
+            <button type="button" id="stop_sound" class="btn btn-outline-danger my-2 py-2 fadein">再生を停止</button>
+
+            <button type="button" id="tetos_death" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">断末魔</button>
+            <button type="button" id="tetos_maziresu" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">マジレス</button>
+            <button type="button" id="tetos_oisii" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">おいし～</button>
+            <button type="button" id="tetos_proposal" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">プロポーサル</button>
+            <button type="button" id="tetos_evol" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">テトス最終進化系</button>
+            <button type="button" id="tetos_urami" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">恨み</button>
+            <button type="button" id="tetos_song" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">てとすの唄</button>
+            <button type="button" id="tetos_uwaaa" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">ｳﾜｱｱｱ</button>
+            <button type="button" id="tetos_zii" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">てと爺</button>
+            <button type="button" id="jeb_waaa" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">ワー！！</button>
+            <button type="button" id="tetos_butigire" class="col-12 btn btn-outline-primary my-2 py-2 fadein" href="">
+                <i class="bi bi-exclamation-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="音が大きいので注意"></i> ぶち切れてとす
+            </button>
+            <button type="button" id="tetos_pepepe" class="btn btn-outline-primary my-2 py-2 fadein" href="">
+                <i class="bi bi-exclamation-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="音が大きいので注意"></i> ぺぺぺ
+            </button>
         </div>
     </div>
 
